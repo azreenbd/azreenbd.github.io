@@ -22,13 +22,13 @@ body {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 
-	animation: fade 5s;
+	animation: fade 4s;
 }
 
 .logo {
 	height: 15rem;
 
-	animation: fade 2s;
+	animation: fade 3s;
 	animation-timing-function: ease-in;
 }
 
@@ -47,7 +47,7 @@ body {
 #contact {
 	font-size: 5rem;
 
-	animation: fade 2s;
+	animation: fade 3s;
 	animation-timing-function: ease-in;
 }
 
