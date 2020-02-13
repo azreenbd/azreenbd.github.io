@@ -57,13 +57,13 @@ body {
 }
 
 #contact a {
-	color: #ed486a;
+	color: #41436a;
 	-webkit-transition: color .5s;
   	transition: color .5s;
 }
 
 #contact a:hover {
-	color: #974063;
+	color: #f69479;
 	
 }
 
