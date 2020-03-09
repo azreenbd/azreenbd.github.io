@@ -1,57 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Naszrul Azreen "Nasx" Badarudin</title>
+	<title>Naszrul Azreen Badarudin</title>
 
-	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<meta name="description" content="Game and web developer plus hobbyist comic illustrator.">
-	<meta name="keywords" content="Game, Developer, Programmer, Comic, Artist, Malaysia, Student, Multimedia University, MMU">
-
-	<script>
-		function myFunction(bar) {
-		    bar.classList.toggle("change");
-
-		    var sideNav = document.getElementById("sideNav");
-
-		    if (sideNav.style.display == "inline") {
-		        sideNav.style.display = "none";
-		    } else {
-		        sideNav.style.display = "inline";
-		    }
-		}
-	</script>
+	<script src="https://kit.fontawesome.com/d9d2fb3f66.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="menuBtn" onclick="myFunction(this)">
-		<div class="bar1"></div>
-		<div class="bar2"></div>
-		<div class="bar3"></div>
-	</div>
+	<div id="main-grid">
+		<header class="container">
+			<div class="logo"></div>
+		</header>
 
-	<nav id="sideNav">
-		<ul>
-			<li><a href="index.html"><b>Ho</b>me</a></li>
-			<li><a href="portfolio.html"><b>Port</b>folio</a></li>
-			<li><a href="resume.html"><b>Ré</b>sumé</a></li>
-		</ul>
-	</nav>
-
-	<div class="container center">
-		<img class="logo" src="img/logo.png" draggable="false">
-
-		<div class="name">
-			<span class="first">n.azreen</span><span class="last">badarudin</span>
+		<div id="title" class="container">
+			<div id="detail">
+				<h1 class="name">Naszrul Azreen</h1>
+				<span class="surname">Badarudin</span>
+				<p class="quote">
+					Web and game developer + hobbyist illustrator.
+				</p>
+			</div>
+			<div id="action">
+				<button type="button" onclick="location.href='#';">Resume</button>
+				<a href="mailto:azreen.bd@gmail.com" target="_blank" class="social-icon" title="E-mail"><i class="fas fa-envelope"></i></a>
+				<a href="https://github.com/azreenbd" target="_blank" class="social-icon" title="Github"><i class="fab fa-github"></i></a>
+			</div>
+			<div id="avatar">
+				
+			</div>
 		</div>
 
-		<div id="contact">
-			<a href="mailto:azreen.bd@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-			<a href="https://github.com/azreenbd" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-			<a href="https://www.facebook.com/nasxartwork/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-			<a href="https://twitter.com/naszrulazreen" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+		<div id="works">
+			<div class="container">
+				<h1 class="heading">Works</h1>
+				<div class="thumbnail-row">
+					<div class="thumbnail">
+						<img src="img/portfolio/scroll.jpg" draggable="false">
+
+						<div class="info">
+							<h1>Scroll.club</h1>
+							<div class="info-icon-row">
+								<i class="fab fa-html5" title="HTML5"></i>
+								<i class="fab fa-css3-alt" title="CSS3"></i>
+								<i class="fab fa-php" title="PHP"></i>
+							</div>
+							<p>Scroll is a platform seeking for visual storytellers within creative academia communities through the production of cartoons, comic strips, comic narratives and illustrations.</p>
+							<button type="button" onclick="window.open('https://www.scroll.club/');">Demo</button>
+						</div>
+						
+					</div>
+
+					<div class="thumbnail">
+						<img src="img/portfolio/rocketeer.jpg" draggable="false">
+
+						<div class="info">
+							<h1>Rocketeer</h1>
+							<div class="info-icon-row">
+								<i class="fab fa-unity" title="Unity"></i>
+								<i class="fab fa-android" title="Android"></i>
+							</div>
+							<p>Scroll is a platform seeking for visual storytellers within creative academia communities through the production of cartoons, comic strips, comic narratives and illustrations.</p>
+							<button type="button" onclick="location.href='#';">Demo</button>
+						</div>
+					</div>
+
+					<div class="thumbnail">
+						<img src="img/portfolio/collest.jpg" draggable="false">
+
+						<div class="info">
+							<h1>Collest.</h1>
+							<div class="info-icon-row">
+								<i class="fab fa-unity" title="Unity"></i>
+								<i class="fab fa-php" title="PHP"></i>
+							</div>
+							<p>Scroll is a platform seeking for visual storytellers within creative academia communities through the production of cartoons, comic strips, comic narratives and illustrations. Scroll is a platform seeking for visual storytellers within creative academia communities through the production of cartoons, comic strips, comic narratives and illustrations.
+
+							Scroll is a platform seeking for visual storytellers within creative academia communities through the production of cartoons, comic strips, comic narratives and illustrations.</p>
+							<button type="button" onclick="location.href='#';">Demo</button>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
 		</div>
+
+		<footer class="container">
+			<div class="social-row">
+				<a href="mailto:azreen.bd@gmail.com" target="_blank" class="social-icon" title="E-mail"><i class="fas fa-envelope"></i></a>
+				<a href="https://github.com/azreenbd" target="_blank" class="social-icon" title="Github"><i class="fab fa-github"></i></a>
+			</div>
+			<p class="copyright">&copy <script>document.write(new Date().getFullYear())</script></p>
+		</footer>
 	</div>
+	
+
 </body>
 </html>
