@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 
 body {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
+	color: #3b3b3b;
 
 	background-image: url("img/organic-bg.svg");
 	background-repeat: no-repeat;
@@ -11,20 +11,20 @@ body {
 	background-size: 80em auto;
 }
 
-/* scrollbar */
-::-webkit-scrollbar {
+/* scrollbar in body*/
+body ::-webkit-scrollbar {
 	width: 4px;
 }
 
-::-webkit-scrollbar-track {
+body ::-webkit-scrollbar-track {
 	background: #cfdee4; 
 }
 
-::-webkit-scrollbar-thumb {
+body ::-webkit-scrollbar-thumb {
 	background: #8b94a2;
 }
 
-::-webkit-scrollbar-thumb:hover {
+body ::-webkit-scrollbar-thumb:hover {
 	background: #aab1bd; 
 }
 
@@ -53,9 +53,8 @@ button:hover {
 #title button {
 	color: #fff;
 	padding: 1.25em 3em;
-	text-transform: uppercase;
-	font-weight: 700;
-	//background: linear-gradient(90deg, #3f92f1, #6dd5fa);
+	
+	font-weight: 600;
 	transition: padding .25s;
 }
 
@@ -104,11 +103,11 @@ header .logo {
 	grid-column: 2;
 	grid-row: 1 / span 2;
 
-	background-image: url("img/avatar.png");
+	background-image: url("img/avatar.svg");
 	background-repeat: no-repeat;
   	background-size: contain;
   	background-position: bottom;
-  	height: 25em;
+  	height: 30em;
 }
 
 #title .name {
@@ -119,13 +118,13 @@ header .logo {
 
 #title .surname {
 	font-size: 28px;
+	font-weight: 700;
 	color: #8c94a3;
 	text-transform: uppercase;
 }
 
 #title .quote {
-	color: #8c94a3;
-	font-weight: 600;
+	color: #a8a8a8;
 }
 
 #title button {
@@ -141,7 +140,7 @@ header .logo {
 }
 
 #works {
-	background-color: #daebf2;
+	background-color: #f4f7f9;
 	padding: 3em 0 2em 0;
 }
 
@@ -163,20 +162,18 @@ header .logo {
 #works .thumbnail {
 	background-color: #fff;
 	
-	border-radius: .5em;
-	width: calc(33.3% - 2em);
+	border-radius: 1rem;
+	width: calc(25% - 1em);
 	margin: 1em 1em 1em 0;
 }
 
 .thumbnail img {
 	width: 100%;
-	border-radius: .5em .5em 0em 0em;
+	border-radius: 1em 1em 0em 0em;
 }
 
 .thumbnail .info {
-	padding: 0 2em 2em 2em;
-	//display: flex;
-	//flex-direction: column;
+	padding: 0 1em 1em 1em;
 }
 
 .thumbnail .info h1 {
@@ -185,18 +182,17 @@ header .logo {
 }
 
 .thumbnail .info p {
-	font-weight: 600;
 	font-size: 12px;
-	color: grey;
+	color: #8a8a8a;
 	padding: 1em;
 	text-align: justify;
-	height: 6em;
+	height: 8em;
 	overflow: auto;
 }
 
 .thumbnail .info button {
 	width: 100%;
-	font-weight: 700;
+	font-weight: 600;
 	transition: opacity .25s;
 }
 
@@ -211,11 +207,30 @@ header .logo {
 }
 
 .copyright {
-	font-weight: 600;
 	color: lightgrey;
 }
 
 footer {
 	padding: 5em 0 1em 0;
 	text-align: center;
+}
+
+@media only screen and (max-width: 1375px) {
+
+	#works .thumbnail {
+		width: calc(50% - 1em);
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+	#works .thumbnail {
+		width: calc(100% - 1em);
+	}
+
+	#title #avatar {
+		background: transparent;
+	}
+
 }
