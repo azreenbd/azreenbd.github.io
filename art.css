@@ -4,7 +4,6 @@ body {
     margin: 0;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://dthezntil550i.cloudfront.net/5r/latest/5r2012021421360700000124766/1280_960/3ffdd644-1c28-4513-ab62-9c8726b055ec.png');
     background-color: #000;
     background-size: cover;
     background-position: center;
@@ -15,6 +14,7 @@ body {
 .social-links {
     position: absolute;
     top: 0;
+    z-index: 2;
     width: calc(100% - (.75rem + .75rem));
     padding: 0 .75rem;
     display: flex;
@@ -38,6 +38,8 @@ body {
     align-items: center;
     padding-left: 5rem;
     height: 64vh;
+    background-color: rgba(0,0,0,.55);
+    backdrop-filter: blur(.25vh);
     /* box-shadow: 0 -5rem 3rem -4.5rem rgba(0, 0, 0, .275) inset; */
 }
 
@@ -76,6 +78,7 @@ body {
     object-fit: contain;
     margin-right: 5em;
     box-shadow: .25rem .25rem .75rem rgba(0, 0, 0, .5);
+    background-color: #000;
 }
 
 #modal-container .info {

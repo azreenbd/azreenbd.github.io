@@ -3,135 +3,485 @@ var app = new Vue({
 	data: {
 		artworks: [
 			/*{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: '',
+				description: '',
+				date: '2020-01-01',
 				isFeatured: true,
 				image: 'img/artwork/lorem.jpg'
 			},*/
 			{
-				title: 'Comic Fiesta (コミックフィエスタ) 2015',
-				description: 'CF\'15 100 Days Countdown (FS) by Nasx',
-				date: '2015-10-31',
+				title: 'Ucchan in Pink',
+				description: '',
+				date: '2020-11-08',
 				isFeatured: true,
-				image: 'https://img.huffingtonpost.com/asset/592763fb150000210015b7ca.jpeg?ops=scalefit_720_noupscale&format=webp'
+				image: 'img/artwork/2020-ucchan_pink_pastel.jpg'
+			},{
+				title: 'Two Piece',
+				description: '',
+				date: '2020-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2020-two_piece.jpg'
+			},
+			{
+				title: 'Game Character Design Concept',
+				description: '',
+				date: '2018-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2018-stem_game_concept.jpg'
 			},
 			{
 				title: 'Scythe Girl',
 				description: '',
-				date: '2018-07-02',
+				date: '2018-01-01',
 				isFeatured: true,
-				image: 'https://dthezntil550i.cloudfront.net/cf/0000124766/78aa5d9c-cacf-4d37-97da-d0b3935eda9c.jpg'
+				image: 'img/artwork/2018-scythe.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Black Punk OC',
+				description: '',
+				date: '2018-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=3'
+				image: 'img/artwork/2018-punk_oc_pose.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
-				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=4'
+				title: 'Michelle Reference Sketch',
+				description: '',
+				date: '2018-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2018-michelle_ref.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Heart With Quote',
+				description: '',
+				date: '2018-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=5'
+				image: 'img/artwork/2018-heart_quote.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
-				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=6'
+				title: 'Emo in Dress',
+				description: '',
+				date: '2018-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2018-emo_dress.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Crush - 01',
+				description: '',
+				date: '2018-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=7'
+				image: 'img/artwork/2018-crush_01.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
-				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=8'
+				title: 'Crush - 02',
+				description: '',
+				date: '2018-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2018-crush_02.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Traditional Malay',
+				description: '',
+				date: '2017-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=9'
+				image: 'img/artwork/2017-trad_malay.jpg'
+			},{
+				title: 'Salvation Shields Reboot',
+				description: '',
+				date: '2017-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2017-ss_reboot.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Black Sweater OC',
+				description: '',
+				date: '2017-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=10'
+				image: 'img/artwork/2017-oc_black.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Kanna from Maid Dragon',
+				description: '',
+				date: '2017-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=11'
+				image: 'img/artwork/2017-kanna_maid_dragon.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Sagiri from Eromanga Sensei',
+				description: '',
+				date: '2017-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=12'
+				image: 'img/artwork/2017-eromanga_sensei_sagiri.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Cold',
+				description: '',
+				date: '2017-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=13'
+				image: 'img/artwork/2017-cold.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Comic Fiesta 2017',
+				description: 'Artwork from Comic Fiesta 2017 100 days countdown.',
+				date: '2017-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=14'
+				image: 'img/artwork/2017-cf17.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Playful \"What?\"',
+				description: '',
+				date: '2016-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=15'
+				image: 'img/artwork/2016-what.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
-				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=16'
+				title: 'Visual Novel Concept Art',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2016-vn_concept.jpg'
 			},
 			{
-				title: 'lorem',
-				description: 'lorem',
-				date: '2020-12-30',
+				title: 'Ucchan Thanks!',
+				description: '',
+				date: '2016-01-01',
 				isFeatured: true,
-				image: 'https://loremflickr.com/320/240?random=17'
-			}
+				image: 'img/artwork/2016-ucchan_thanks.png'
+			},
+			{
+				title: 'Tomboy in Dress',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2016-tomboy_dress_sketch.jpg'
+			},
+			{
+				title: 'Stroll',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-stroll.png'
+			},
+			{
+				title: 'Salvation Shields Cover',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-ss_cover.jpg'
+			},
+			{
+				title: 'School Girl Sigh',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-school_girl_sigh.jpg'
+			},
+			{
+				title: 'Punk OC',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-punk_oc.jpg'
+			},
+			{
+				title: 'Neko Lisa',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-neko_lisa.jpg'
+			},
+			{
+				title: 'Cleaning The Window',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-maid_cleaning.jpg'
+			},
+			{
+				title: 'Ji-Ran Concept',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-ji-ran-concept.jpg'
+			},
+			{
+				title: 'Hana',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-hana.jpg'
+			},
+			{
+				title: 'Fhana Chibi',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2016-fhana_chibi.jpg'
+			},{
+				title: 'Double Self Thumbnail',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2016-double_self_thumb.jpg'
+			},
+			{
+				title: 'Double Self Old Version',
+				description: '',
+				date: '2020-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-double_self_old_2.jpg'
+			},
+			{
+				title: 'Double Self - 01',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2016-double_self_01.jpg'
+			},
+			{
+				title: 'Double Self - 02',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2016-double_self_02.jpg'
+			},
+			{
+				title: 'Double Self',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-double_self.jpg'
+			},
+			{
+				title: 'Cat Girl OC',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2016-cat_girl_oc.jpg'
+			},
+			{
+				title: 'Candyland',
+				description: '',
+				date: '2016-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2016-candyland.jpg'
+			},
+			{
+				title: 'Visual Novel Teacher',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2015-vn_teacher.jpg'
+			},
+			{
+				title: 'Vampire Sprite Sheet',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2015-vampire_spritesheet.jpg'
+			},
+			{
+				title: 'Vampire Sprite',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2015-vampire_sprite.jpg'
+			},
+			{
+				title: 'Ucchan',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2015-ucchan_1.jpg'
+			},
+			{
+				title: 'Surprised',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2015-surprised.jpg'
+			},
+			{
+				title: 'Strawberry Miku',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2015-strawberry_miku.jpg'
+			},
+			{
+				title: 'Vivi-chan',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2015-nvidia_personafication.jpg'
+			},
+			{
+				title: 'Chill Maid',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2015-maid_chill.jpg'
+			},
+			{
+				title: 'Kindergartener',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2015-kindergartener.jpg'
+			},
+			{
+				title: 'Comic Fiesta 2015',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2015-cf15.jpg'
+			},
+			{
+				title: 'Bubbles',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2015-bubbles.jpg'
+			},
+			{
+				title: 'Blenda\'s Blender',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2015-blenda_blender.jpg'
+			},
+			{
+				title: 'Bishoujo',
+				description: '',
+				date: '2015-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2015-bishoujo.jpg'
+			},
+			{
+				title: 'Star Girl',
+				description: '',
+				date: '2014-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2014-star_girl.jpg'
+			},
+			{
+				title: 'Kuriyama Mirai from Kyoukai no Kanata',
+				description: '',
+				date: '2014-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2014-kuriyama_mirai.jpg'
+			},
+			{
+				title: 'Jealousy',
+				description: '',
+				date: '2014-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2014-jealousy.jpg'
+			},
+			{
+				title: 'Hatsune Miku',
+				description: '',
+				date: '2014-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2014-hatsune_miku.jpg'
+			},
+			{
+				title: 'Fox Girl Maid',
+				description: '',
+				date: '2014-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2014-fox_girl_maid.jpg'
+			},
+			{
+				title: 'Confused Chibi',
+				description: '',
+				date: '2014-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2014-confused.jpg'
+			},
+			{
+				title: 'Comic Fiesta 2014',
+				description: '',
+				date: '2014-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2014-cf14.jpg'
+			},
+			{
+				title: 'OC Tiung',
+				description: '',
+				date: '2013-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2013-tiung_oc.jpg'
+			},
+			{
+				title: 'Shopping',
+				description: '',
+				date: '2013-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2013-shopping.jpg'
+			},
+			{
+				title: 'Dumb Way to Die',
+				description: '',
+				date: '2013-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2013-dumb_way_to_die.jpg'
+			},
+			{
+				title: 'Double Self Old Version',
+				description: '',
+				date: '2013-01-01',
+				isFeatured: false,
+				image: 'img/artwork/2013-double_self_old_ver.jpg'
+			},
+			{
+				title: 'Comic Fiesta 2013',
+				description: '',
+				date: '2013-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2013-cf13.jpg'
+			},
+			{
+				title: 'Blue School Girl',
+				description: '',
+				date: '2013-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2013-blue_schoolgirl.jpg'
+			},
+			{
+				title: 'Asuna from Sword Art Online',
+				description: '',
+				date: '2013-01-01',
+				isFeatured: true,
+				image: 'img/artwork/2013-asuna_sao.jpg'
+			},
+
 		],
 		modalIsVisible: false,
 		modalArtworkId: null
 	},
+	created: function () {
+		//:style="background-image: url(quotes[Math.floor(Math.random() * quotes.length)])"
+       	
+		var featured = this.artworks[Math.floor(Math.random() * this.artworks.length)];
+
+		while (!featured.isFeatured) {
+			featured = this.artworks[Math.floor(Math.random() * this.artworks.length)];
+		}
+
+       	document.body.style.background = "url('" + featured.image + "')";
+       	document.body.style.backgroundColor = "#000";
+       	document.body.style.backgroundSize = "cover";
+       	document.body.style.backgroundPosition = "center";
+       	document.body.style.backgroundAttachment = "fixed";
+
+
+
+       	/*"background-color: #000;
+	    background-size: cover;
+	    background-position: center;
+	    background-attachment: fixed;"*/
+
+    },
 	methods: {
 		showModal: function (isShowing, index) {
 			if(isShowing) {
