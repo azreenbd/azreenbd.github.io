@@ -471,7 +471,7 @@ var app = new Vue({
        	document.body.style.background = "url('" + featured.image + "')";
        	document.body.style.backgroundColor = "#000";
        	document.body.style.backgroundSize = "cover";
-       	document.body.style.backgroundPosition = "center";
+       	document.body.style.backgroundPosition = "50% 30%";
        	document.body.style.backgroundAttachment = "fixed";
 
 
