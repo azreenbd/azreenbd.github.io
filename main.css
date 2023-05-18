@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 body {
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
-	color: #3b3b3b;
-
-	background-image: url("img/organic-bg.svg");
-	background-repeat: no-repeat;
-	background-position: top right;
-	background-size: 80em auto;
+	font-family: 'Roboto Mono', monospace;
+	color: #fff;
+	background-color: #000;
 }
 
 /* scrollbar in body*/
@@ -34,97 +30,59 @@ body ::-webkit-scrollbar-thumb:hover {
 	margin: auto;
 }
 
-#main-grid {
-	display: grid;
-	//grid-gap: 4em;
+.center-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 button {
 	border: 0;
 	color: #fff;
-	border-radius: 2.5em;
 	padding: 1em 3em;
-	background: linear-gradient(90deg, #3f92f1, #6dd5fa);
+	background: #ff0000;
 }
 button:hover {
 	cursor: pointer;
 }
 
-#title button {
-	color: #fff;
-	padding: 1.25em 3em;
-	
-	font-weight: 600;
-	transition: padding .25s;
-}
-
-#title button:hover {
-	padding: 1.25em 3.5em;
-}
-
 a {
-	color: #adadad;
+	color: #3d3d3d;
 }
 
 a:hover {
-	color: grey;
+	color: #ff0000;
 	transition: color .5s;
 }
 
 header {
-	padding: .5em 0;
-}
-
-header .logo {
-	background-image: url("img/logo.png");
-	background-repeat: no-repeat;
-  	background-size: 100% 100%;
-	height: 5em;
-	width: 5em;
+	padding: 4rem 0 0 0;
 }
 
 #title {
-	display: grid;
-	margin-top: 4em;
-	//grid-row-gap: 5em;
-}
-
-#title #detail {
-	grid-column: 1;
-	grid-row: 1;
-}
-
-#title #action {
-	grid-column: 1;
-	grid-row: 2;
-}
-
-#title #avatar {
-	grid-column: 2;
-	grid-row: 1 / span 2;
-
-	background-image: url("img/avatar.svg");
-	background-repeat: no-repeat;
-  	background-size: contain;
-  	background-position: bottom;
-  	height: 30em;
+	padding: 4em 0;
 }
 
 #title .name {
+	font-family: 'Open Sans', sans-serif;
 	margin: 0;
-	font-size: 60px;
+	font-size: 3rem;
 	font-weight: 800;
+	text-align: center;
 }
 
 #title .surname {
-	font-size: 28px;
-	font-weight: 700;
-	color: #8c94a3;
-	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	color: #707070;
+	text-shadow: none;
+	text-align: center;
 }
 
 #title .quote {
+	font-family: 'Open Sans', sans-serif;
 	color: #a8a8a8;
+	text-align: center;
 }
 
 #title button {
@@ -140,7 +98,7 @@ header .logo {
 }
 
 #works {
-	background-color: #f4f7f9;
+	background-color: black;
 	padding: 3em 0 2em 0;
 }
 
@@ -160,16 +118,28 @@ header .logo {
 }
 
 #works .thumbnail {
-	background-color: #fff;
+	background-color: #242424;
 	
-	border-radius: 1rem;
 	width: calc(25% - 1em);
 	margin: 1em 1em 1em 0;
+
+	transition: 0.25s;
+}
+
+#works .thumbnail:hover {
+	box-shadow: .5em .5em 0 0 #ff0000;
+	margin: .25em 1em 1em 0;
 }
 
 .thumbnail img {
 	width: 100%;
-	border-radius: 1em 1em 0em 0em;
+	opacity: .5;
+	filter: grayscale(.5);
+	transition: .75s;
+}
+.thumbnail:hover img {
+	opacity: 1;
+	filter: grayscale(0);
 }
 
 .thumbnail .info {
@@ -182,36 +152,48 @@ header .logo {
 }
 
 .thumbnail .info p {
-	font-size: 12px;
-	color: #8a8a8a;
-	padding: 1em;
+	font-family: 'Open Sans', sans-serif;
+	font-size: .9rem;
+	color: #a8a8a8;
 	text-align: justify;
 	height: 8em;
 	overflow: auto;
+	margin: .25em;
 }
 
-.thumbnail .info button {
-	width: 100%;
+.thumbnail .info button, #title button {
 	font-weight: 600;
 	transition: opacity .25s;
+	margin: .5em;
+	transition: 0.25s;
 }
 
-.thumbnail .info button:hover {
-	opacity: .8;
+.thumbnail .info button:hover,  #title button:hover {
+	box-shadow: .5em .5em 0 0 black;
+	margin: .25em .75em .75em .25em;
 }
+
+#title button:hover {
+	box-shadow: .5em .5em 0 0 #242424 !important;
+}
+
 
 .thumbnail .info .info-icon-row {
-	font-size: 18px;
-	color: grey;
-	text-align: center;
+	color: #707070;
+	font-size: 1.2rem;
+	margin: .25em;
 }
 
 .thumbnail .info .info-icon-row .fab {
 	cursor: pointer;
+	transition: .25s;
+}
+.thumbnail .info .info-icon-row .fab:hover {
+	color: #a8a8a8;
 }
 
 .copyright {
-	color: lightgrey;
+	color: #707070;
 }
 
 footer {
@@ -228,6 +210,9 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+	.container {
+		width: 90%;
+	}
 
 	#works .thumbnail {
 		width: calc(100% - 1em);
