@@ -30,6 +30,17 @@ body ::-webkit-scrollbar-thumb:hover {
 	margin: auto;
 }
 
+#jumbotron {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 50vh;
+	padding-bottom: 40vh;
+	background: url('https://media.tenor.com/-kZOB16tELEAAAAC/this-is-fine-fire.gif');
+	background-size: cover;
+	background-position: bottom;
+}
+
 .center-flex {
 	display: flex;
 	justify-content: center;
@@ -59,34 +70,27 @@ header {
 	padding: 4rem 0 0 0;
 }
 
-#title {
-	padding: 4em 0;
-}
-
 #title .name {
 	font-family: 'Open Sans', sans-serif;
-	margin: 0;
+	margin:0;
 	font-size: 3rem;
 	font-weight: 800;
 	text-align: center;
+	background-color: rgba(255, 0, 0, 0.25);
+	padding: 0 .25em;
 }
 
 #title .surname {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
-	color: #707070;
-	text-shadow: none;
 	text-align: center;
 }
 
 #title .quote {
 	font-family: 'Open Sans', sans-serif;
-	color: #a8a8a8;
+	background-color: rgba(0,0,0,.25);
+	padding: 0 .25em;
 	text-align: center;
-}
-
-#title button {
-	margin: 0 .25em;
 }
 
 .social-row {
@@ -98,7 +102,7 @@ header {
 }
 
 #works {
-	background-color: black;
+	margin-top: -20vh;
 	padding: 3em 0 2em 0;
 }
 
@@ -161,19 +165,19 @@ header {
 	margin: .25em;
 }
 
-.thumbnail .info button, #title button {
+.thumbnail .info button, .fancy-button {
 	font-weight: 600;
 	transition: opacity .25s;
 	margin: .5em;
 	transition: 0.25s;
 }
 
-.thumbnail .info button:hover,  #title button:hover {
+.thumbnail .info button:hover,  .fancy-button:hover {
 	box-shadow: .5em .5em 0 0 black;
 	margin: .25em .75em .75em .25em;
 }
 
-#title button:hover {
+.fancy-button:hover {
 	box-shadow: .5em .5em 0 0 #242424 !important;
 }
 
