@@ -6,153 +6,279 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 
 	<script src="https://kit.fontawesome.com/d9d2fb3f66.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<meta name="description" content="Bachelor of Computer Science (Hons.) from MMU. Specialized in web and game development with Laravel, ASP.NET and Unity3D.">
+	<meta name="description" content="A Full Stack Developer with over 4 years of experience in web development. Graduated with Bachelor of Computer Science from Multimedia University.">
 </head>
-<body>
-	<div id="jumbotron">
-		<header class="container center-flex">
-			<svg width="6em" height="6em" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-				<path id="rect2080" d="M113.388,255.119l-28.231,-0c-0.038,-0 -0.077,0.001 -0.115,0.001c-47.112,0 -85.039,-37.927 -85.039,-85.039l-0,-28.349l113.385,0l-0,28.347l-85.039,-0l0,0.001c0,31.408 25.285,56.692 56.693,56.692l28.346,0l-0,28.347Zm85.04,-0.002l-0,-28.346l28.346,0l-0,28.346l-28.346,0Zm28.346,-28.346l-0,-28.346l28.346,-0l0,28.346l-28.346,0Zm-56.694,-28.346l28.346,-0l0,28.346l-28.346,0l0,-28.346Zm56.694,-0l-28.348,-0l0,-28.346l28.348,-0l-0,28.346Zm-56.694,-28.346l0,28.346l-28.346,-0l-0,-28.346l28.346,-0Zm28.346,-0l-28.346,-0l0,-28.347l28.346,0l0,28.347Zm0,-85.04l-28.346,-0l0,28.346l28.346,-0l0,-28.346Zm-198.425,28.346l0,-28.231c0,-0.038 -0.001,-0.077 -0.001,-0.115c-0,-47.112 37.927,-85.039 85.039,-85.039l28.349,-0l-0,113.385l-28.346,-0l-0,-85.039l-0.002,0c-31.407,0 -56.692,25.285 -56.692,56.693l-0,28.346l-28.347,-0Zm226.773,-56.693l-28.348,0l0,28.347l28.348,-0l-0,-28.347Zm-56.694,28.347l0,-28.347l-28.346,0l-0,28.347l28.346,-0Zm56.694,-56.693l-0,28.346l28.346,0l0,-28.346l-28.346,0Zm-56.694,28.346l28.346,0l0,-28.346l-28.346,0l0,28.346Zm28.348,-56.692l-0,28.346l28.346,0l-0,-28.346l-28.346,-0Z" style="fill:#fff;fill-rule:nonzero;"/>
+<div id="app">
+	<nav>
+		<header align="center">
+			<svg width="2.5rem" height="2.5rem" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+				<path id="rect2080" d="M113.388,255.119l-28.231,-0c-0.038,-0 -0.077,0.001 -0.115,0.001c-47.112,0 -85.039,-37.927 -85.039,-85.039l-0,-28.349l113.385,0l-0,28.347l-85.039,-0l0,0.001c0,31.408 25.285,56.692 56.693,56.692l28.346,0l-0,28.347Zm85.04,-0.002l-0,-28.346l28.346,0l-0,28.346l-28.346,0Zm28.346,-28.346l-0,-28.346l28.346,-0l0,28.346l-28.346,0Zm-56.694,-28.346l28.346,-0l0,28.346l-28.346,0l0,-28.346Zm56.694,-0l-28.348,-0l0,-28.346l28.348,-0l-0,28.346Zm-56.694,-28.346l0,28.346l-28.346,-0l-0,-28.346l28.346,-0Zm28.346,-0l-28.346,-0l0,-28.347l28.346,0l0,28.347Zm0,-85.04l-28.346,-0l0,28.346l28.346,-0l0,-28.346Zm-198.425,28.346l0,-28.231c0,-0.038 -0.001,-0.077 -0.001,-0.115c-0,-47.112 37.927,-85.039 85.039,-85.039l28.349,-0l-0,113.385l-28.346,-0l-0,-85.039l-0.002,0c-31.407,0 -56.692,25.285 -56.692,56.693l-0,28.346l-28.347,-0Zm226.773,-56.693l-28.348,0l0,28.347l28.348,-0l-0,-28.347Zm-56.694,28.347l0,-28.347l-28.346,0l-0,28.347l28.346,-0Zm56.694,-56.693l-0,28.346l28.346,0l0,-28.346l-28.346,0Zm-56.694,28.346l28.346,0l0,-28.346l-28.346,0l0,28.346Zm28.348,-56.692l-0,28.346l28.346,0l-0,-28.346l-28.346,-0Z" style="fill:#fabc61;fill-rule:nonzero;"/>
 			</svg>
 		</header>
+	</nav>
 
-		<div id="title" class="container center-flex">
-			<div id="detail">
-				<h1 class="name">Naszrul Azreen <span class="surname">Badarudin</span></h1>
-				<div style="text-align: center">
-					<span class="quote">
-						Web and game developer + hobbyist illustrator.
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="container center-flex">
-			<button class="fancy-button" type="button" onclick="location.href='https://drive.google.com/file/d/12D57fvZ6iXas3UGI-ZzqhgL2u5cCBOuQ/view?usp=sharing';">Résumé</button>
-		</div>
-	</div>
+	<div id="main-window">
+		<div class="main-content">
+			<div class="border-top"></div>
+			
+			<div id="works">
+				<div class="item-merge-row">
+					<h1>Naszrul Azreen</h1> <h2>Badarudin</h2>
+					<h3 style="margin-top: 1rem;">Full Stack Web Developer</h3>
+					
+					<ul>
+						<li>Vue.js</li>
+						<li>Laravel</li>
+						<li>Express.js</li>
+						<li>MySQL</li>
+						<li>MongoDB</li>
+						<li>Node.js</li>
+						<li>Nginx</li>
+						<li>Amazon Web Services (AWS)</li>
+						<li>DevOps</li>
+					</ul>
 
-
-	<div id="works">
-		<div class="container">
-			<div class="thumbnail-row">
-				<div class="thumbnail">
-					<img src="img/portfolio/scroll.jpg" draggable="false">
-
-					<div class="info">
-						<h1>Scroll.club</h1>
-						<p>A platform for artists to showcase their artwork and interact with each other. This platform also uses an invite code system to only allow club members to create a profile and upload their work.</p>
-						<div class="info-icon-row">
-							<i class="fab fa-laravel" title="Laravel"></i>
-							<i class="fab fa-html5" title="HTML5"></i>
-							<i class="fab fa-css3-alt" title="CSS3"></i>
-							<i class="fab fa-php" title="PHP"></i>
+					<footer style="margin-top:2rem">
+						<div>
+							<a v-for="social of socials" :href="social.href" target="_blank" :title="social.title" class="icon-spacing link-secondary" style="font-size: 2em"><i :class="social.icon"></i></a>
 						</div>
-						<button type="button" onclick="window.open('https://www.scroll.club/');"><i class="fas fa-globe"></i> Demo</button>
-					</div>
+						<p>&copy {{thisYear}}</p>
+					</footer>
 				</div>
-
-				<div class="thumbnail">
-					<img src="img/portfolio/art-showcase.jpg" draggable="false">
-
+				<div v-for="project of projects" :key="project.title" @click="openLink(project.link)" class="item pointer-cursor">
+					<img class="thumbnail" :src="project.img" draggable="false">
+		
 					<div class="info">
-						<h1>Art Showcase Website</h1>
-						<p>The original base of <b>Scroll.club</b> project. A platform where user can upload artworks and follow other artist. Dashboard allows user to view the newest work uploaded by the artist they followed. User can also like and comment on an artwork.</p>
-						<div class="info-icon-row">
-							<i class="fab fa-laravel" title="Laravel"></i>
-							<i class="fab fa-html5" title="HTML5"></i>
-							<i class="fab fa-css3-alt" title="CSS3"></i>
-							<i class="fab fa-php" title="PHP"></i>
+						<div>
+							<i v-for="techStack of project.techStacks" :class="techStack.icon + ' icon-spacing text-primary'" :title="techStack.title"></i>
 						</div>
-						<button type="button" onclick="window.open('https://github.com/azreenbd/art-showcase-website');"><i class="fab fa-github"></i> GitHub</button>
-					</div>
-				</div>
-
-				<div class="thumbnail">
-					<img src="img/portfolio/rocketeer.jpg" draggable="false">
-
-					<div class="info">
-						<h1>Rocketeer</h1>
-						<p>A simple Android game with tap-only control, made with Unity (C#). Art and design elements are self-made.</p>
-						<div class="info-icon-row">
-							<i class="fab fa-unity" title="Unity"></i>
-							<i class="fab fa-android" title="Android"></i>
-						</div>
-						<button type="button" onclick="window.open('https://youtu.be/lp3Z9dDb1RU');"><i class="fab fa-youtube"></i> Demo</button>
-					</div>
-				</div>
-
-				<div class="thumbnail">
-					<img src="img/portfolio/collest.jpg" draggable="false">
-
-					<div class="info">
-						<h1>Collest.</h1>
-						<p>A collaborative-learning treasure-hunting multiplayer game, made with Unity (C#). The game uses REST API to store and retrieve data. JSON Web Token (JWT) is used to secure user data.</p>
-						<div class="info-icon-row">
-							<i class="fab fa-unity" title="Unity"></i>
-							<i class="fab fa-php" title="PHP"></i>
-						</div>
-						<button type="button" onclick="window.open('https://youtu.be/YtJ9H-XyPmk');"><i class="fab fa-youtube"></i> Demo</button>
-					</div>
-				</div>
-
-				<div class="thumbnail">
-					<img src="img/portfolio/evemasys.jpg" draggable="false">
-
-					<div class="info">
-						<h1>Event Management System</h1>
-						<p>A platform to manage events. User can create new event, register committee members and attendees. Made purely with HTML, CSS and PHP.</p>
-						<div class="info-icon-row">
-							<i class="fab fa-html5" title="HTML5"></i>
-							<i class="fab fa-css3-alt" title="CSS3"></i>
-							<i class="fab fa-php" title="PHP"></i>
-						</div>
-						<button type="button" onclick="window.open('https://github.com/azreenbd/event-management-web');"><i class="fab fa-github"></i> GitHub</button>
-					</div>
-				</div>
-
-				<div class="thumbnail">
-					<img src="img/portfolio/azreenbd.jpg" draggable="false">
-
-					<div class="info">
-						<h1>azreenbd.com</h1>
-						<p>A website made purely with HTML and CSS. No framework or template has been used to make this website.</p>
-						<div class="info-icon-row">
-							<i class="fab fa-html5" title="HTML5"></i>
-							<i class="fab fa-css3-alt" title="CSS3"></i>
-						</div>
-						<button type="button" onclick="window.open('https://azreenbd.com/');"><i class="fas fa-globe"></i> Demo</button>
-					</div>
-				</div>
-
-				<div class="thumbnail">
-					<img src="img/portfolio/nasxtye.jpg" draggable="false">
-
-					<div class="info">
-						<h1>Nasxtye</h1>
-						<p>An art portfolio website made from scratch with HTML, CSS and Vue.js.</p>
-						<div class="info-icon-row">
-							<i class="fab fa-html5" title="HTML5"></i>
-							<i class="fab fa-css3-alt" title="CSS3"></i>
-							<i class="fab fa-vuejs" title="Vue.js"></i>
-						</div>
-						<button type="button" onclick="window.open('https://azreenbd.com/art');"><i class="fas fa-globe"></i> Demo</button>
+						<h2 style="margin: 0;">{{project.title}}</h2>
+						
+						<p>{{project.description}}</p>
+						
+						<!-- <button type="button" onclick="openLink(project.link);">Demo</button> -->
 					</div>
 				</div>
 				
 			</div>
+			
+			<div class="border-bottom"></div>
 		</div>
+		
+		
 	</div>
 
-	<footer class="container">
-		<div class="social-row">
-			<a href="mailto:azreen.bd@gmail.com" target="_blank" class="social-icon" title="E-mail"><i class="fas fa-envelope"></i></a>
-			<a href="https://github.com/azreenbd" target="_blank" class="social-icon" title="Github"><i class="fab fa-github"></i></a>
-		</div>
-		<p class="copyright">&copy <script>document.write(new Date().getFullYear())</script></p>
-	</footer>
 	
+</div>
+<script>
+	const { createApp, ref } = Vue
+  
+	createApp(
+		{
+			setup() {
+				return {
+					name: "Naszrul Azreen Badarudin",
+					title: "Full Stack Web Developer",
+					projects: [
+						{
+							title: "Scroll.club",
+							description: "A platform for artists to showcase their artwork and interact with each other. This platform also uses an invite code system to only allow club members to create a profile and upload their work.",
+							link: "https://www.scroll.club/",
+							img: "img/portfolio/scroll.jpg",
+							techStacks: [
+								{
+									name: "Laravel",
+									icon: "fab fa-laravel"
+								},
+								{
+									name: "HTML5",
+									icon: "fab fa-html5"
+								},
+								{
+									name: "CSS3",
+									icon: "fab fa-css3-alt"
+								},
+								{
+									name: "PHP",
+									icon: "fab fa-php"
+								},
+							]
+						},
+						{
+							title: "Art Showcase Website",
+							description: "The original base of Scroll.club project. A platform where user can upload artworks and follow other artist. Dashboard allows user to view the newest work uploaded by the artist they followed. User can also like and comment on an artwork.",
+							link: "https://github.com/azreenbd/art-showcase-website",
+							img: "img/portfolio/art-showcase.jpg",
+							techStacks: [
+								{
+									name: "Laravel",
+									icon: "fab fa-laravel"
+								},
+								{
+									name: "HTML5",
+									icon: "fab fa-html5"
+								},
+								{
+									name: "CSS3",
+									icon: "fab fa-css3-alt"
+								},
+								{
+									name: "PHP",
+									icon: "fab fa-php"
+								},
+							]
+						},
+						{
+							title: "Waktu Solat",
+							description: "A Vue.js build that display Islamic prayer time from JAKIM's e-Solat API. A progressive web app (PWA) that can also be installed on your smartphone.",
+							link: "https://solat.azreenbd.com/",
+							img: "img/portfolio/solat.png",
+							techStacks: [
+								{
+									name: "Vue.js",
+									icon: "fab fa-vuejs"
+								},
+								{
+									name: "HTML5",
+									icon: "fab fa-html5"
+								},
+								{
+									name: "CSS3",
+									icon: "fab fa-css3-alt"
+								}
+							]
+						},
+						{
+							title: "YouTube Shuffler",
+							description: "Hates YouTube shuffle algorithm? This will truly shuffle your playlist without repeating the same videos.",
+							link: "http://shuffler.azreenbd.com/",
+							img: "img/portfolio/shuffler.png",
+							techStacks: [
+								{
+									name: "Vue.js",
+									icon: "fab fa-vuejs"
+								},
+								{
+									name: "HTML5",
+									icon: "fab fa-html5"
+								},
+								{
+									name: "CSS3",
+									icon: "fab fa-css3-alt"
+								}
+							]
+						},
+						{
+							title: "Event Management System",
+							description: "A platform to manage events. User can create new event, register committee members and attendees. Made purely with HTML, CSS and PHP.",
+							link: "https://github.com/azreenbd/event-management-web",
+							img: "img/portfolio/evemasys.jpg",
+							techStacks: [
+								{
+									name: "HTML5",
+									icon: "fab fa-html5"
+								},
+								{
+									name: "CSS3",
+									icon: "fab fa-css3-alt"
+								},
+								{
+									name: "PHP",
+									icon: "fab fa-php"
+								},
+							]
+						},
+						{
+							title: "azreenbd.com",
+							description: "You are here.",
+							link: "https://azreenbd.com/",
+							img: "img/portfolio/azreenbd.png",
+							techStacks: [
+								{
+									name: "Vue.js",
+									icon: "fab fa-vuejs"
+								},
+								{
+									name: "HTML5",
+									icon: "fab fa-html5"
+								},
+								{
+									name: "CSS3",
+									icon: "fab fa-css3-alt"
+								}
+							]
+						},
+						{
+							title: "Rocketeer",
+							description: "A simple Android game with tap-only control, made with Unity (C#). Art and design elements are self-made.",
+							link: "https://youtu.be/lp3Z9dDb1RU",
+							img: "img/portfolio/rocketeer.jpg",
+							techStacks: [
+								{
+									name: "Unity",
+									icon: "fab fa-unity"
+								},
+								{
+									name: "Android",
+									icon: "fab fa-android"
+								}
+							]
+						},
+						{
+							title: "Collest.",
+							description: "A collaborative-learning treasure-hunting multiplayer game, made with Unity (C#). The game uses REST API to store and retrieve data. JSON Web Token (JWT) is used to secure user data.",
+							link: "https://youtu.be/YtJ9H-XyPmk",
+							img: "img/portfolio/collest.jpg",
+							techStacks: [
+								{
+									name: "Unity",
+									icon: "fab fa-unity"
+								},
+								{
+									name: "PHP",
+									icon: "fab fa-php"
+								}
+							]
+						},
+					],
+					socials: [
+						{
+							title: "Github",
+							href: "https://github.com/azreenbd",
+							icon: "fab fa-github"
+						},
+						{
+							title: "LinkedIn",
+							href: "https://www.linkedin.com/in/azreenbd",
+							icon: "fab fa-linkedin"
+						},
+						{
+							title: "E-mail",
+							href: "mailto:azreen.bd@gmail.com",
+							icon: "fas fa-envelope"
+						},
+						
+						
+					]
+				}
+			},
+			computed: {
+				thisYear() {
+					return new Date().getFullYear();
+				}
+			},
+			methods: {
+				openLink(link) {
+					window.open(link,'_blank')
+				}
+			}
+			
 
-</body>
+
+		}
+	).mount('#app')
+</script>
 </html>
