@@ -26,30 +26,34 @@
 			
 			<div id="works">
 				<div class="item-merge-row">
-					<h1>Naszrul Azreen</h1> <h2>Badarudin</h2>
-					<h3 style="margin-top: 1rem;">Full Stack Web Developer</h3>
-					
-					<ul>
-						<li>Vue.js</li>
-						<li>Laravel</li>
-						<li>Express.js</li>
-						<li>MySQL</li>
-						<li>MongoDB</li>
-						<li>Node.js</li>
-						<li>Nginx</li>
-						<li>Amazon Web Services (AWS)</li>
-						<li>DevOps</li>
-					</ul>
+					<div class="padding">
+						<h1>Naszrul Azreen</h1> <h2>Badarudin</h2>
+						<h3 style="margin-top: 1rem;">Full Stack Web Developer</h3>
+						
+						<ul>
+							<li>Vue.js</li>
+							<li>Laravel</li>
+							<li>Express.js</li>
+							<li>MySQL</li>
+							<li>MongoDB</li>
+							<li>Node.js</li>
+							<li>Nginx</li>
+							<li>Amazon Web Services (AWS)</li>
+							<li>DevOps</li>
+						</ul>
 
-					<footer style="margin-top:2rem">
-						<div>
-							<a v-for="social of socials" :href="social.href" target="_blank" :title="social.title" class="icon-spacing link-secondary" style="font-size: 2em"><i :class="social.icon"></i></a>
-						</div>
-						<p>&copy {{thisYear}}</p>
-					</footer>
+						<footer style="margin-top:2rem">
+							<div>
+								<a v-for="social of socials" :href="social.href" target="_blank" :title="social.title" class="icon-spacing link-secondary" style="font-size: 2em"><i :class="social.icon"></i></a>
+							</div>
+							<p>&copy {{thisYear}}</p>
+						</footer>
+					</div>
 				</div>
 				<div v-for="project of projects" :key="project.title" @click="openLink(project.link)" class="item pointer-cursor">
-					<img class="thumbnail" :src="project.img" draggable="false">
+					
+					
+					<div class="thumbnail" :style="`background-image: url(${project.img})`"></div>
 		
 					<div class="info">
 						<div>
@@ -133,7 +137,7 @@
 						},
 						{
 							title: "Waktu Solat",
-							description: "A Vue.js build that display Islamic prayer time from JAKIM's e-Solat API. A progressive web app (PWA) that can also be installed on your smartphone.",
+							description: "Displays Islamic prayer time from JAKIM's e-Solat API. A progressive web app (PWA) that can also be installed on your smartphone.",
 							link: "https://solat.azreenbd.com/",
 							img: "img/portfolio/solat.png",
 							techStacks: [
