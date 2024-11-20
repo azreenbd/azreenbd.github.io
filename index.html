@@ -87,211 +87,203 @@
 	
 </div>
 <script>
-	const { createApp, ref } = Vue
-  
-	createApp(
-		{
-			setup() {
-				return {
-					name: "Naszrul Azreen Badarudin",
-					title: "Full Stack Web Developer",
-					projects: [
-						{
-							title: "Scroll.club",
-							description: "A platform for artists to showcase their artwork and interact with each other. This platform also uses an invite code system to only allow club members to create a profile and upload their work.",
-							link: "https://www.scroll.club/",
-							img: "img/portfolio/scroll.jpg",
-							techStacks: [
-								{
-									name: "Laravel",
-									icon: "fab fa-laravel"
-								},
-								{
-									name: "HTML5",
-									icon: "fab fa-html5"
-								},
-								{
-									name: "CSS3",
-									icon: "fab fa-css3-alt"
-								},
-								{
-									name: "PHP",
-									icon: "fab fa-php"
-								},
-							]
-						},
-						{
-							title: "Art Showcase Website",
-							description: "The original base of Scroll.club project. A platform where user can upload artworks and follow other artist. Dashboard allows user to view the newest work uploaded by the artist they followed. User can also like and comment on an artwork.",
-							link: "https://github.com/azreenbd/art-showcase-website",
-							img: "img/portfolio/art-showcase.jpg",
-							techStacks: [
-								{
-									name: "Laravel",
-									icon: "fab fa-laravel"
-								},
-								{
-									name: "HTML5",
-									icon: "fab fa-html5"
-								},
-								{
-									name: "CSS3",
-									icon: "fab fa-css3-alt"
-								},
-								{
-									name: "PHP",
-									icon: "fab fa-php"
-								},
-							]
-						},
-						{
-							title: "Waktu Solat",
-							description: "Displays Islamic prayer time from JAKIM's e-Solat API. A progressive web app (PWA) that can also be installed on your smartphone.",
-							link: "https://solat.azreenbd.com/",
-							img: "img/portfolio/solat.png",
-							techStacks: [
-								{
-									name: "Vue.js",
-									icon: "fab fa-vuejs"
-								},
-								{
-									name: "HTML5",
-									icon: "fab fa-html5"
-								},
-								{
-									name: "CSS3",
-									icon: "fab fa-css3-alt"
-								}
-							]
-						},
-						{
-							title: "YouTube Shuffler",
-							description: "Hates YouTube shuffle algorithm? This will truly shuffle your playlist without repeating the same videos.",
-							link: "http://shuffler.azreenbd.com/",
-							img: "img/portfolio/shuffler.png",
-							techStacks: [
-								{
-									name: "Vue.js",
-									icon: "fab fa-vuejs"
-								},
-								{
-									name: "HTML5",
-									icon: "fab fa-html5"
-								},
-								{
-									name: "CSS3",
-									icon: "fab fa-css3-alt"
-								}
-							]
-						},
-						{
-							title: "Event Management System",
-							description: "A platform to manage events. User can create new event, register committee members and attendees. Made purely with HTML, CSS and PHP.",
-							link: "https://github.com/azreenbd/event-management-web",
-							img: "img/portfolio/evemasys.jpg",
-							techStacks: [
-								{
-									name: "HTML5",
-									icon: "fab fa-html5"
-								},
-								{
-									name: "CSS3",
-									icon: "fab fa-css3-alt"
-								},
-								{
-									name: "PHP",
-									icon: "fab fa-php"
-								},
-							]
-						},
-						{
-							title: "azreenbd.com",
-							description: "You are here.",
-							link: "https://azreenbd.com/",
-							img: "img/portfolio/azreenbd.png",
-							techStacks: [
-								{
-									name: "Vue.js",
-									icon: "fab fa-vuejs"
-								},
-								{
-									name: "HTML5",
-									icon: "fab fa-html5"
-								},
-								{
-									name: "CSS3",
-									icon: "fab fa-css3-alt"
-								}
-							]
-						},
-						{
-							title: "Rocketeer",
-							description: "A simple Android game with tap-only control, made with Unity (C#). Art and design elements are self-made.",
-							link: "https://youtu.be/lp3Z9dDb1RU",
-							img: "img/portfolio/rocketeer.jpg",
-							techStacks: [
-								{
-									name: "Unity",
-									icon: "fab fa-unity"
-								},
-								{
-									name: "Android",
-									icon: "fab fa-android"
-								}
-							]
-						},
-						{
-							title: "Collest.",
-							description: "A collaborative-learning treasure-hunting multiplayer game, made with Unity (C#). The game uses REST API to store and retrieve data. JSON Web Token (JWT) is used to secure user data.",
-							link: "https://youtu.be/YtJ9H-XyPmk",
-							img: "img/portfolio/collest.jpg",
-							techStacks: [
-								{
-									name: "Unity",
-									icon: "fab fa-unity"
-								},
-								{
-									name: "PHP",
-									icon: "fab fa-php"
-								}
-							]
-						},
-					],
-					socials: [
-						{
-							title: "Github",
-							href: "https://github.com/azreenbd",
-							icon: "fab fa-github"
-						},
-						{
-							title: "LinkedIn",
-							href: "https://www.linkedin.com/in/azreenbd",
-							icon: "fab fa-linkedin"
-						},
-						{
-							title: "E-mail",
-							href: "mailto:azreen.bd@gmail.com",
-							icon: "fas fa-envelope"
-						},
-						
-						
-					]
-				}
+new Vue({
+	el: '#app',
+	data: {
+		name: "Naszrul Azreen Badarudin",
+		title: "Full Stack Web Developer",
+		projects: [
+			{
+				title: "Scroll.club",
+				description: "A platform for artists to showcase their artwork and interact with each other. This platform also uses an invite code system to only allow club members to create a profile and upload their work.",
+				link: "https://www.scroll.club/",
+				img: "img/portfolio/scroll.jpg",
+				techStacks: [
+					{
+						name: "Laravel",
+						icon: "fab fa-laravel"
+					},
+					{
+						name: "HTML5",
+						icon: "fab fa-html5"
+					},
+					{
+						name: "CSS3",
+						icon: "fab fa-css3-alt"
+					},
+					{
+						name: "PHP",
+						icon: "fab fa-php"
+					},
+				]
 			},
-			computed: {
-				thisYear() {
-					return new Date().getFullYear();
-				}
+			{
+				title: "Art Showcase Website",
+				description: "The original base of Scroll.club project. A platform where user can upload artworks and follow other artist. Dashboard allows user to view the newest work uploaded by the artist they followed. User can also like and comment on an artwork.",
+				link: "https://github.com/azreenbd/art-showcase-website",
+				img: "img/portfolio/art-showcase.jpg",
+				techStacks: [
+					{
+						name: "Laravel",
+						icon: "fab fa-laravel"
+					},
+					{
+						name: "HTML5",
+						icon: "fab fa-html5"
+					},
+					{
+						name: "CSS3",
+						icon: "fab fa-css3-alt"
+					},
+					{
+						name: "PHP",
+						icon: "fab fa-php"
+					},
+				]
 			},
-			methods: {
-				openLink(link) {
-					window.open(link,'_blank')
-				}
-			}
+			{
+				title: "Waktu Solat",
+				description: "Displays Islamic prayer time from JAKIM's e-Solat API. A progressive web app (PWA) that can also be installed on your smartphone.",
+				link: "https://solat.azreenbd.com/",
+				img: "img/portfolio/solat.png",
+				techStacks: [
+					{
+						name: "Vue.js",
+						icon: "fab fa-vuejs"
+					},
+					{
+						name: "HTML5",
+						icon: "fab fa-html5"
+					},
+					{
+						name: "CSS3",
+						icon: "fab fa-css3-alt"
+					}
+				]
+			},
+			{
+				title: "YouTube Shuffler",
+				description: "Hates YouTube shuffle algorithm? This will truly shuffle your playlist without repeating the same videos.",
+				link: "http://shuffler.azreenbd.com/",
+				img: "img/portfolio/shuffler.png",
+				techStacks: [
+					{
+						name: "Vue.js",
+						icon: "fab fa-vuejs"
+					},
+					{
+						name: "HTML5",
+						icon: "fab fa-html5"
+					},
+					{
+						name: "CSS3",
+						icon: "fab fa-css3-alt"
+					}
+				]
+			},
+			{
+				title: "Event Management System",
+				description: "A platform to manage events. User can create new event, register committee members and attendees. Made purely with HTML, CSS and PHP.",
+				link: "https://github.com/azreenbd/event-management-web",
+				img: "img/portfolio/evemasys.jpg",
+				techStacks: [
+					{
+						name: "HTML5",
+						icon: "fab fa-html5"
+					},
+					{
+						name: "CSS3",
+						icon: "fab fa-css3-alt"
+					},
+					{
+						name: "PHP",
+						icon: "fab fa-php"
+					},
+				]
+			},
+			{
+				title: "azreenbd.com",
+				description: "You are here.",
+				link: "https://azreenbd.com/",
+				img: "img/portfolio/azreenbd.png",
+				techStacks: [
+					{
+						name: "Vue.js",
+						icon: "fab fa-vuejs"
+					},
+					{
+						name: "HTML5",
+						icon: "fab fa-html5"
+					},
+					{
+						name: "CSS3",
+						icon: "fab fa-css3-alt"
+					}
+				]
+			},
+			{
+				title: "Rocketeer",
+				description: "A simple Android game with tap-only control, made with Unity (C#). Art and design elements are self-made.",
+				link: "https://youtu.be/lp3Z9dDb1RU",
+				img: "img/portfolio/rocketeer.jpg",
+				techStacks: [
+					{
+						name: "Unity",
+						icon: "fab fa-unity"
+					},
+					{
+						name: "Android",
+						icon: "fab fa-android"
+					}
+				]
+			},
+			{
+				title: "Collest.",
+				description: "A collaborative-learning treasure-hunting multiplayer game, made with Unity (C#). The game uses REST API to store and retrieve data. JSON Web Token (JWT) is used to secure user data.",
+				link: "https://youtu.be/YtJ9H-XyPmk",
+				img: "img/portfolio/collest.jpg",
+				techStacks: [
+					{
+						name: "Unity",
+						icon: "fab fa-unity"
+					},
+					{
+						name: "PHP",
+						icon: "fab fa-php"
+					}
+				]
+			},
+		],
+		socials: [
+			{
+				title: "Github",
+				href: "https://github.com/azreenbd",
+				icon: "fab fa-github"
+			},
+			{
+				title: "LinkedIn",
+				href: "https://www.linkedin.com/in/azreenbd",
+				icon: "fab fa-linkedin"
+			},
+			{
+				title: "E-mail",
+				href: "mailto:azreen.bd@gmail.com",
+				icon: "fas fa-envelope"
+			},
 			
-
-
+			
+		]
+	},
+	computed: {
+		thisYear() {
+			return new Date().getFullYear();
 		}
-	).mount('#app')
+	},
+	methods: {
+		openLink(link) {
+			window.open(link,'_blank')
+		}
+	}
+})
 </script>
 </html>
