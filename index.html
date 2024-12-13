@@ -23,8 +23,16 @@
 <div id="app">
 	<nav>
 		<header align="center">
-			<svg width="2.5rem" height="2.5rem" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-				<path id="rect2080" d="M113.388,255.119l-28.231,-0c-0.038,-0 -0.077,0.001 -0.115,0.001c-47.112,0 -85.039,-37.927 -85.039,-85.039l-0,-28.349l113.385,0l-0,28.347l-85.039,-0l0,0.001c0,31.408 25.285,56.692 56.693,56.692l28.346,0l-0,28.347Zm85.04,-0.002l-0,-28.346l28.346,0l-0,28.346l-28.346,0Zm28.346,-28.346l-0,-28.346l28.346,-0l0,28.346l-28.346,0Zm-56.694,-28.346l28.346,-0l0,28.346l-28.346,0l0,-28.346Zm56.694,-0l-28.348,-0l0,-28.346l28.348,-0l-0,28.346Zm-56.694,-28.346l0,28.346l-28.346,-0l-0,-28.346l28.346,-0Zm28.346,-0l-28.346,-0l0,-28.347l28.346,0l0,28.347Zm0,-85.04l-28.346,-0l0,28.346l28.346,-0l0,-28.346Zm-198.425,28.346l0,-28.231c0,-0.038 -0.001,-0.077 -0.001,-0.115c-0,-47.112 37.927,-85.039 85.039,-85.039l28.349,-0l-0,113.385l-28.346,-0l-0,-85.039l-0.002,0c-31.407,0 -56.692,25.285 -56.692,56.693l-0,28.346l-28.347,-0Zm226.773,-56.693l-28.348,0l0,28.347l28.348,-0l-0,-28.347Zm-56.694,28.347l0,-28.347l-28.346,0l-0,28.347l28.346,-0Zm56.694,-56.693l-0,28.346l28.346,0l0,-28.346l-28.346,0Zm-56.694,28.346l28.346,0l0,-28.346l-28.346,0l0,28.346Zm28.348,-56.692l-0,28.346l28.346,0l-0,-28.346l-28.346,-0Z" style="fill:#fabc61;fill-rule:nonzero;"/>
+			<svg width="100%" height="100%" viewBox="0 0 70.17 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+				<g id="Logo">
+					<rect id="Square" x="0" y="0" width="70.17" height="115" style="fill:#c13e3e;"/>
+					<g id="Logo-In" serif:id="Logo In">
+						<path d="M17.34,15.472l-0,44.83l-9.34,-0l0,-52.302l14.945,0c5.157,-0 9.338,4.181 9.338,9.338c0,15.041 0,42.964 0,42.964l-9.34,-0l0,-44.83l-5.603,-0Z" style="fill:#fff;"/>
+						<path d="M52.83,15.472l0,44.83l9.34,-0l-0,-52.302l-14.945,0c-5.158,-0 -9.338,4.181 -9.338,9.338c-0,15.041 -0,42.964 -0,42.964l9.339,-0l0,-44.83l5.604,-0Z" style="fill:#fff;"/>
+						<path d="M17.338,107c0.001,-0 14.945,-0 14.945,-0l0,-0.002c0,-4.125 -3.344,-7.47 -7.47,-7.47l-7.473,0l-0,-24.283l5.603,0l0,3.736l9.34,0l0,-11.207c0,-0 -14.944,-0 -14.945,-0c-5.157,-0 -9.338,4.18 -9.338,9.338c0,6.211 0,14.339 0,20.55c0,5.157 4.181,9.338 9.338,9.338Z" style="fill:#fff;"/>
+						<path d="M52.83,92.057l-5.604,-0l0,-24.283l-9.339,-0l-0,25.3l8.405,-0l0,5.426l-8.405,-0l-0,8.5l9.339,-0l0,-7.472l5.604,0l0,7.472l9.34,-0l-0,-8.5l-8.406,-0l0,-5.426l8.406,-0l-0,-25.3l-9.34,-0l0,24.283Z" style="fill:#fff;"/>
+					</g>
+				</g>
 			</svg>
 		</header>
 	</nav>
@@ -68,7 +76,7 @@
 						<div>
 							<i v-for="techStack of project.techStacks" :class="techStack.icon + ' icon-spacing text-primary'" :title="techStack.title"></i>
 						</div>
-						<h2 style="margin: 0;">{{project.title}}</h2>
+						<h2 style="margin: 0 0 .5rem 0;">{{project.title}}</h2>
 						
 						<p>{{project.description}}</p>
 						
