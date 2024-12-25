@@ -40,7 +40,7 @@ body {
     padding-left: 5rem;
     height: 64vh;
     background-color: rgba(0,0,0,.5);
-    backdrop-filter: blur(.25vh);
+    /* backdrop-filter: blur(.25vh); */
     /* box-shadow: 0 -5rem 3rem -4.5rem rgba(0, 0, 0, .275) inset; */
 }
 
