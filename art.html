@@ -26,19 +26,13 @@
 	<div id="app">
 		<div class="social-links">
 			<a title="Instagram" href="https://www.instagram.com/nasxtye/"><i class="fab fa-instagram"></i></a>
-			<a title="Twitter" href="https://twitter.com/naszrulazreen"><i class="fab fa-twitter"></i></a>
+			<a title="Twitter" href="https://twitter.com/nasxtye"><i class="fab fa-twitter"></i></a>
 			<a title="Facebook" href="https://www.facebook.com/nasxtye"><i class="fab fa-facebook-square"></i></a>
 			<a title="Youtube" href="https://www.youtube.com/user/NasxGeek"><i class="fab fa-youtube"></i></a>
 		</div>
 
 		<div id="banner">
-			<div>
-				<span style="display: flex; align-items: flex-end;">
-					<img src="img/logo.png" alt="Nasxtye logo">
-					<h1>Nasx<br>tye</h1>
-				</span>
-				
-			</div>
+			<img src="img/nasxtye_wordmark.png" alt="Nasxtye logo">
 		</div>
 		<div id="gallery">
 			<div v-for="(artwork, index) in artworks" class="thumbnail-art">
@@ -57,7 +51,7 @@
 					<img :src="artworks[modalArtworkId].image">
 
 					<div class="info">
-						<p style="font-size: .75em; color: grey;">{{ formatDate(artworks[modalArtworkId].date) }}</p>
+						<p style="color: grey;">{{ formatDate(artworks[modalArtworkId].date) }}</p>
 						<h1>{{ artworks[modalArtworkId].title }}</h1>
 						<p>{{ artworks[modalArtworkId].description }}</p>
 					</div>
