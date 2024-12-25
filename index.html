@@ -42,7 +42,7 @@
 			<div class="border-top"></div>
 			
 			<div id="works">
-				<div class="item-merge-row">
+				<div class="item-merge-row sidebar-box">
 					<div class="padding">
 						<h1>Naszrul Azreen</h1> <h2>Badarudin</h2>
 						<h3 style="margin-top: 1rem;">Full Stack Web Developer</h3>
@@ -55,28 +55,29 @@
 							<li>MongoDB</li>
 							<li>Node.js</li>
 							<li>Nginx</li>
-							<li>Amazon Web Services (AWS)</li>
 							<li>DevOps</li>
 						</ul>
 
 						<footer style="margin-top:2rem">
 							<div>
-								<a v-for="social of socials" :href="social.href" target="_blank" :title="social.title" class="icon-spacing link-secondary" style="font-size: 2em"><i :class="social.icon"></i></a>
+								<a v-for="social of socials" :href="social.href" target="_blank" :title="social.title" class="icon-spacing" style="font-size: 2em"><i :class="social.icon"></i></a>
 							</div>
 							<p>&copy {{thisYear}}</p>
 						</footer>
 					</div>
 				</div>
+				<h1 class="mobile-only" style="margin-bottom: .5rem;">Works</h1>
 				<div v-for="project of projects" :key="project.title" @click="openLink(project.link)" class="item pointer-cursor">
 					
 					
 					<div class="thumbnail" :style="`background-image: url(${project.img})`"></div>
 		
 					<div class="info">
-						<div>
+						
+						<h2>{{project.title}}</h2>
+						<div style="margin: 0 0 .5rem 0;">
 							<i v-for="techStack of project.techStacks" :class="techStack.icon + ' icon-spacing text-primary'" :title="techStack.title"></i>
 						</div>
-						<h2 style="margin: 0 0 .5rem 0;">{{project.title}}</h2>
 						
 						<p>{{project.description}}</p>
 						

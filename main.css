@@ -3,24 +3,26 @@
 body {
 	margin: 0;
 	font-family: "Barlow Semi Condensed", sans-serif;
-	color: rgb(25, 27, 31);
 	background-color: #1f1f1f;
 	overflow: hidden;
 	height: 100vh;
+	max-width: 2560px;
+}
+
+body, a {
+	color: #fff;
 }
 
 header {
 	margin: 2rem .5rem
 }
 
-a {
-	color: #fff;
-}
 h1, h2, h3, h4, h5, p {
 	margin: 0;
 }
-h1, h2, h3, h4, h5, .link-secondary, .text-primary {
-	color: #fff !important;
+
+.text-primary {
+	color: #c13e3e !important;
 }
 h1, h2, h3, h4, h5 {
 	font-family: "Barlow Semi Condensed", sans-serif;
@@ -64,14 +66,14 @@ nav {
 }
 
 .thumbnail {
-	border-radius: .5rem .5rem 0 0;
+	border-radius: .5rem;
 	width: 100%;
 	height: 20vh;
-	box-shadow: inset 0 -4.5rem 2rem -2rem #c13e3e;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
-	opacity: .5;
+	background-color: #c13e3e;
+	opacity: .6;
 	transition: 0.5s;
 }
 
@@ -85,9 +87,8 @@ nav {
 	grid-gap: .5rem;
 	padding-bottom: 5rem;
 }
-.item, .item-merge-row, .item-merge-row {
+.sidebar-box {
 	background-color: #c13e3e;
-	color: #fff;
 	border-radius: .5rem;
 }
 
@@ -107,7 +108,7 @@ nav {
 }
 
 .info {
-	padding: 0 1.4em 1.4em 1.4em;
+	padding: .5em .75em 1.5em .75em;
 }
 
 .pointer-cursor {
@@ -124,6 +125,7 @@ nav {
 	background-color: rgba(255, 255, 255, 0);
 	position: absolute;
 	z-index: 5;
+	max-width: calc(2560px - 4rem - 1rem);
 }
 
 .border-top {
@@ -137,6 +139,9 @@ nav {
 	bottom: 1rem;
 	left: 4rem;
 	box-shadow: 0 2rem 0 0 #1f1f1f; 
+}
+.mobile-only {
+	display:none
 }
 
 
@@ -155,6 +160,13 @@ nav {
 @media only screen and (max-width: 768px) {
 	#works {
 		grid-template-columns: calc(100%);
+	}
+	.sidebar-box {
+		margin-bottom: 3em;
+		padding-bottom: 1em;
+	}
+	.mobile-only {
+		display: block;
 	}
 }
 
