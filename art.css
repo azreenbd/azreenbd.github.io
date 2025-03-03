@@ -39,14 +39,14 @@ body {
     align-items: center;
     padding-left: 5rem;
     height: 64vh;
-    background-color: rgba(0,0,0,.5);
-    /* backdrop-filter: blur(.25vh); */
+    background-color: rgba(0,0,0,.75);
+    backdrop-filter: blur(.75vh);
     /* box-shadow: 0 -5rem 3rem -4.5rem rgba(0, 0, 0, .275) inset; */
 }
 
 #banner h1 {
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: 8rem;
+    font-weight: 700;
     text-transform: lowercase;
     line-height: .8;
     margin: .8rem 1.5rem;
@@ -87,7 +87,7 @@ body {
 
 #modal-container .info h1 {
     font-size: 5rem;
-    font-weight: 900;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -202,7 +202,7 @@ body {
     }
 
     #banner h1 {
-        font-size: 2rem;
+        font-size: 5rem;
         margin: .8rem .6rem;
     }
 
