@@ -23,13 +23,6 @@ var app = new Vue({
 				image: 'img/artwork/2020-two_piece.jpg'
 			},
 			{
-				title: 'Game Character Design Concept',
-				description: '',
-				date: '2018-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2018-stem_game_concept.jpg'
-			},
-			{
 				title: 'Scythe Girl',
 				description: '',
 				date: '2018-01-01',
@@ -64,32 +57,13 @@ var app = new Vue({
 				isFeatured: false,
 				image: 'img/artwork/2018-emo_dress.jpg'
 			},
-			{
-				title: 'Crush - 01',
-				description: '',
-				date: '2018-01-01',
-				isFeatured: true,
-				image: 'img/artwork/2018-crush_01.jpg'
-			},
-			{
-				title: 'Crush - 02',
-				description: '',
-				date: '2018-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2018-crush_02.jpg'
-			},
+			
 			{
 				title: 'Traditional Malay',
 				description: '',
 				date: '2017-01-01',
 				isFeatured: true,
 				image: 'img/artwork/2017-trad_malay.jpg'
-			},{
-				title: 'Salvation Shields Reboot',
-				description: '',
-				date: '2017-01-01',
-				isFeatured: true,
-				image: 'img/artwork/2017-ss_reboot.jpg'
 			},
 			{
 				title: 'Black Sweater OC',
@@ -148,27 +122,6 @@ var app = new Vue({
 				image: 'img/artwork/2016-ucchan_thanks.png'
 			},
 			{
-				title: 'Tomboy in Dress',
-				description: '',
-				date: '2016-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2016-tomboy_dress_sketch.jpg'
-			},
-			{
-				title: 'Stroll',
-				description: '',
-				date: '2016-01-01',
-				isFeatured: true,
-				image: 'img/artwork/2016-stroll.png'
-			},
-			{
-				title: 'Salvation Shields Cover',
-				description: '',
-				date: '2016-01-01',
-				isFeatured: true,
-				image: 'img/artwork/2016-ss_cover.jpg'
-			},
-			{
 				title: 'School Girl Sigh',
 				description: '',
 				date: '2016-01-01',
@@ -197,13 +150,6 @@ var app = new Vue({
 				image: 'img/artwork/2016-maid_cleaning.jpg'
 			},
 			{
-				title: 'Ji-Ran Concept',
-				description: '',
-				date: '2016-01-01',
-				isFeatured: true,
-				image: 'img/artwork/2016-ji-ran-concept.jpg'
-			},
-			{
 				title: 'Hana',
 				description: '',
 				date: '2016-01-01',
@@ -211,38 +157,11 @@ var app = new Vue({
 				image: 'img/artwork/2016-hana.jpg'
 			},
 			{
-				title: 'Fhana Chibi',
-				description: '',
-				date: '2016-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2016-fhana_chibi.jpg'
-			},{
 				title: 'Double Self Thumbnail',
 				description: '',
 				date: '2016-01-01',
 				isFeatured: false,
 				image: 'img/artwork/2016-double_self_thumb.jpg'
-			},
-			{
-				title: 'Double Self Old Version',
-				description: '',
-				date: '2020-01-01',
-				isFeatured: true,
-				image: 'img/artwork/2016-double_self_old_2.jpg'
-			},
-			{
-				title: 'Double Self - 01',
-				description: '',
-				date: '2016-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2016-double_self_01.jpg'
-			},
-			{
-				title: 'Double Self - 02',
-				description: '',
-				date: '2016-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2016-double_self_02.jpg'
 			},
 			{
 				title: 'Double Self',
@@ -252,39 +171,11 @@ var app = new Vue({
 				image: 'img/artwork/2016-double_self.jpg'
 			},
 			{
-				title: 'Cat Girl OC',
-				description: '',
-				date: '2016-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2016-cat_girl_oc.jpg'
-			},
-			{
 				title: 'Candyland',
 				description: '',
 				date: '2016-01-01',
 				isFeatured: true,
 				image: 'img/artwork/2016-candyland.jpg'
-			},
-			{
-				title: 'Visual Novel Teacher',
-				description: '',
-				date: '2015-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2015-vn_teacher.jpg'
-			},
-			{
-				title: 'Vampire Sprite Sheet',
-				description: '',
-				date: '2015-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2015-vampire_spritesheet.jpg'
-			},
-			{
-				title: 'Vampire Sprite',
-				description: '',
-				date: '2015-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2015-vampire_sprite.jpg'
 			},
 			{
 				title: 'Ucchan',
@@ -308,25 +199,11 @@ var app = new Vue({
 				image: 'img/artwork/2015-strawberry_miku.jpg'
 			},
 			{
-				title: 'Vivi-chan',
-				description: '',
-				date: '2015-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2015-nvidia_personafication.jpg'
-			},
-			{
 				title: 'Chill Maid',
 				description: '',
 				date: '2015-01-01',
 				isFeatured: false,
 				image: 'img/artwork/2015-maid_chill.jpg'
-			},
-			{
-				title: 'Kindergartener',
-				description: '',
-				date: '2015-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2015-kindergartener.jpg'
 			},
 			{
 				title: 'Comic Fiesta 2015',
@@ -385,20 +262,6 @@ var app = new Vue({
 				image: 'img/artwork/2014-hatsune_miku.jpg'
 			},
 			{
-				title: 'Fox Girl Maid',
-				description: '',
-				date: '2014-01-01',
-				isFeatured: true,
-				image: 'img/artwork/2014-fox_girl_maid.jpg'
-			},
-			{
-				title: 'Confused Chibi',
-				description: '',
-				date: '2014-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2014-confused.jpg'
-			},
-			{
 				title: 'Comic Fiesta 2014',
 				description: '',
 				date: '2014-01-01',
@@ -418,20 +281,6 @@ var app = new Vue({
 				date: '2013-01-01',
 				isFeatured: true,
 				image: 'img/artwork/2013-shopping.jpg'
-			},
-			{
-				title: 'Dumb Way to Die',
-				description: '',
-				date: '2013-01-01',
-				isFeatured: true,
-				image: 'img/artwork/2013-dumb_way_to_die.jpg'
-			},
-			{
-				title: 'Double Self Old Version',
-				description: '',
-				date: '2013-01-01',
-				isFeatured: false,
-				image: 'img/artwork/2013-double_self_old_ver.jpg'
 			},
 			{
 				title: 'Comic Fiesta 2013',
