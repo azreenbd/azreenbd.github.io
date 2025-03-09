@@ -37,7 +37,6 @@ body {
 #banner {
     display: flex;
     align-items: center;
-    padding-left: 5rem;
     height: 64vh;
     background-color: rgba(0,0,0,.75);
     backdrop-filter: blur(.75vh);
@@ -198,7 +197,6 @@ body {
 
     /* Banner */
     #banner {
-        padding-left: 0;
         justify-content: center;
     }
 
